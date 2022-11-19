@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		065C4E5DF3BF700FCD4CDEC0 /* Pods_Personal_DiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9087D7781CFBF7D8CCB2AFF9 /* Pods_Personal_DiaryTests.framework */; };
+		5A90C6145BB49C6EBE8BD90E /* Pods_Personal_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E667CE8C32010DEA7666C2 /* Pods_Personal_Diary.framework */; };
+		6A498D2D2929367200E6588A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D2C2929367200E6588A /* AppDelegate.swift */; };
+		6A498D2F2929367200E6588A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D2E2929367200E6588A /* SceneDelegate.swift */; };
+		6A498D312929367200E6588A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D302929367200E6588A /* ViewController.swift */; };
+		6A498D342929367200E6588A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D322929367200E6588A /* Main.storyboard */; };
+		6A498D362929367500E6588A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D352929367500E6588A /* Assets.xcassets */; };
+		6A498D392929367500E6588A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D372929367500E6588A /* LaunchScreen.storyboard */; };
+		6A498D442929367500E6588A /* Personal_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D432929367500E6588A /* Personal_DiaryTests.swift */; };
+		6A498D4E2929367500E6588A /* Personal_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D4D2929367500E6588A /* Personal_DiaryUITests.swift */; };
+		6A498D502929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D4F2929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift */; };
+		6B6F0BA1B4124231B977439B /* Pods_Personal_Diary_Personal_DiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D83959D16E7A3DD69C0C04 /* Pods_Personal_Diary_Personal_DiaryUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A498D402929367500E6588A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A498D212929367200E6588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A498D282929367200E6588A;
+			remoteInfo = "Personal-Diary";
+		};
+		6A498D4A2929367500E6588A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A498D212929367200E6588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A498D282929367200E6588A;
+			remoteInfo = "Personal-Diary";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DEE96C8BF0536AE53B2A5FF /* Pods-Personal-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary.release.xcconfig"; path = "Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary.release.xcconfig"; sourceTree = "<group>"; };
+		51D83959D16E7A3DD69C0C04 /* Pods_Personal_Diary_Personal_DiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Diary_Personal_DiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585A0D4EC8DBE3F186FC442A /* Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5960E5E0147B77A80A8F149E /* Pods-Personal-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		6A498D292929367200E6588A /* Personal-Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal-Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A498D2C2929367200E6588A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A498D2E2929367200E6588A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A498D302929367200E6588A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A498D332929367200E6588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A498D352929367500E6588A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A498D382929367500E6588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A498D3A2929367500E6588A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A498D3F2929367500E6588A /* Personal-DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Personal-DiaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A498D432929367500E6588A /* Personal_DiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_DiaryTests.swift; sourceTree = "<group>"; };
+		6A498D492929367500E6588A /* Personal-DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Personal-DiaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A498D4D2929367500E6588A /* Personal_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_DiaryUITests.swift; sourceTree = "<group>"; };
+		6A498D4F2929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_DiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FD0B7BE54C4E9EF558DAEA9 /* Pods-Personal-DiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-DiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal-DiaryTests/Pods-Personal-DiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9087D7781CFBF7D8CCB2AFF9 /* Pods_Personal_DiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_DiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E667CE8C32010DEA7666C2 /* Pods_Personal_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA43FDA83C0EA21B415E289 /* Pods-Personal-DiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-DiaryTests.release.xcconfig"; path = "Target Support Files/Pods-Personal-DiaryTests/Pods-Personal-DiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC4E4E1EFD21ACE08B1FDD3E /* Pods-Personal-Diary-Personal-DiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary-Personal-DiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A498D262929367200E6588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A90C6145BB49C6EBE8BD90E /* Pods_Personal_Diary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D3C2929367500E6588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065C4E5DF3BF700FCD4CDEC0 /* Pods_Personal_DiaryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D462929367500E6588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6F0BA1B4124231B977439B /* Pods_Personal_Diary_Personal_DiaryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A498D202929367200E6588A = {
+			isa = PBXGroup;
+			children = (
+				6A498D2B2929367200E6588A /* Personal-Diary */,
+				6A498D422929367500E6588A /* Personal-DiaryTests */,
+				6A498D4C2929367500E6588A /* Personal-DiaryUITests */,
+				6A498D2A2929367200E6588A /* Products */,
+				7EB528EA94B243565D4714D8 /* Pods */,
+				E84534DDB2D387E5CB8E1989 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A498D2A2929367200E6588A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A498D292929367200E6588A /* Personal-Diary.app */,
+				6A498D3F2929367500E6588A /* Personal-DiaryTests.xctest */,
+				6A498D492929367500E6588A /* Personal-DiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A498D2B2929367200E6588A /* Personal-Diary */ = {
+			isa = PBXGroup;
+			children = (
+				6A498D2C2929367200E6588A /* AppDelegate.swift */,
+				6A498D2E2929367200E6588A /* SceneDelegate.swift */,
+				6A498D302929367200E6588A /* ViewController.swift */,
+				6A498D322929367200E6588A /* Main.storyboard */,
+				6A498D352929367500E6588A /* Assets.xcassets */,
+				6A498D372929367500E6588A /* LaunchScreen.storyboard */,
+				6A498D3A2929367500E6588A /* Info.plist */,
+			);
+			path = "Personal-Diary";
+			sourceTree = "<group>";
+		};
+		6A498D422929367500E6588A /* Personal-DiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A498D432929367500E6588A /* Personal_DiaryTests.swift */,
+			);
+			path = "Personal-DiaryTests";
+			sourceTree = "<group>";
+		};
+		6A498D4C2929367500E6588A /* Personal-DiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A498D4D2929367500E6588A /* Personal_DiaryUITests.swift */,
+				6A498D4F2929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift */,
+			);
+			path = "Personal-DiaryUITests";
+			sourceTree = "<group>";
+		};
+		7EB528EA94B243565D4714D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5960E5E0147B77A80A8F149E /* Pods-Personal-Diary.debug.xcconfig */,
+				4DEE96C8BF0536AE53B2A5FF /* Pods-Personal-Diary.release.xcconfig */,
+				EC4E4E1EFD21ACE08B1FDD3E /* Pods-Personal-Diary-Personal-DiaryUITests.debug.xcconfig */,
+				585A0D4EC8DBE3F186FC442A /* Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig */,
+				8FD0B7BE54C4E9EF558DAEA9 /* Pods-Personal-DiaryTests.debug.xcconfig */,
+				9DA43FDA83C0EA21B415E289 /* Pods-Personal-DiaryTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E84534DDB2D387E5CB8E1989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E667CE8C32010DEA7666C2 /* Pods_Personal_Diary.framework */,
+				51D83959D16E7A3DD69C0C04 /* Pods_Personal_Diary_Personal_DiaryUITests.framework */,
+				9087D7781CFBF7D8CCB2AFF9 /* Pods_Personal_DiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A498D282929367200E6588A /* Personal-Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A498D532929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-Diary" */;
+			buildPhases = (
+				6A527A126B7C8657D6B6CAFA /* [CP] Check Pods Manifest.lock */,
+				6A498D252929367200E6588A /* Sources */,
+				6A498D262929367200E6588A /* Frameworks */,
+				6A498D272929367200E6588A /* Resources */,
+				ABC9D53E4DD48FE52CC20021 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Personal-Diary";
+			productName = "Personal-Diary";
+			productReference = 6A498D292929367200E6588A /* Personal-Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A498D3E2929367500E6588A /* Personal-DiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A498D562929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-DiaryTests" */;
+			buildPhases = (
+				E56BE837BD27979CB998994B /* [CP] Check Pods Manifest.lock */,
+				6A498D3B2929367500E6588A /* Sources */,
+				6A498D3C2929367500E6588A /* Frameworks */,
+				6A498D3D2929367500E6588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A498D412929367500E6588A /* PBXTargetDependency */,
+			);
+			name = "Personal-DiaryTests";
+			productName = "Personal-DiaryTests";
+			productReference = 6A498D3F2929367500E6588A /* Personal-DiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A498D482929367500E6588A /* Personal-DiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A498D592929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-DiaryUITests" */;
+			buildPhases = (
+				CB3A275795812C1E2629A8D8 /* [CP] Check Pods Manifest.lock */,
+				6A498D452929367500E6588A /* Sources */,
+				6A498D462929367500E6588A /* Frameworks */,
+				6A498D472929367500E6588A /* Resources */,
+				7DED32F83F4BDBEBE045C302 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A498D4B2929367500E6588A /* PBXTargetDependency */,
+			);
+			name = "Personal-DiaryUITests";
+			productName = "Personal-DiaryUITests";
+			productReference = 6A498D492929367500E6588A /* Personal-DiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A498D212929367200E6588A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6A498D282929367200E6588A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6A498D3E2929367500E6588A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6A498D282929367200E6588A;
+					};
+					6A498D482929367500E6588A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6A498D282929367200E6588A;
+					};
+				};
+			};
+			buildConfigurationList = 6A498D242929367200E6588A /* Build configuration list for PBXProject "Personal-Diary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A498D202929367200E6588A;
+			productRefGroup = 6A498D2A2929367200E6588A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A498D282929367200E6588A /* Personal-Diary */,
+				6A498D3E2929367500E6588A /* Personal-DiaryTests */,
+				6A498D482929367500E6588A /* Personal-DiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A498D272929367200E6588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A498D392929367500E6588A /* LaunchScreen.storyboard in Resources */,
+				6A498D362929367500E6588A /* Assets.xcassets in Resources */,
+				6A498D342929367200E6588A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D3D2929367500E6588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D472929367500E6588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A527A126B7C8657D6B6CAFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal-Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DED32F83F4BDBEBE045C302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC9D53E4DD48FE52CC20021 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3A275795812C1E2629A8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal-Diary-Personal-DiaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56BE837BD27979CB998994B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal-DiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A498D252929367200E6588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A498D312929367200E6588A /* ViewController.swift in Sources */,
+				6A498D2D2929367200E6588A /* AppDelegate.swift in Sources */,
+				6A498D2F2929367200E6588A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D3B2929367500E6588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A498D442929367500E6588A /* Personal_DiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A498D452929367500E6588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A498D502929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift in Sources */,
+				6A498D4E2929367500E6588A /* Personal_DiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A498D412929367500E6588A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A498D282929367200E6588A /* Personal-Diary */;
+			targetProxy = 6A498D402929367500E6588A /* PBXContainerItemProxy */;
+		};
+		6A498D4B2929367500E6588A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A498D282929367200E6588A /* Personal-Diary */;
+			targetProxy = 6A498D4A2929367500E6588A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A498D322929367200E6588A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A498D332929367200E6588A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A498D372929367500E6588A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A498D382929367500E6588A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A498D512929367500E6588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A498D522929367500E6588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A498D542929367500E6588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5960E5E0147B77A80A8F149E /* Pods-Personal-Diary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Personal-Diary/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A498D552929367500E6588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DEE96C8BF0536AE53B2A5FF /* Pods-Personal-Diary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Personal-Diary/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A498D572929367500E6588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD0B7BE54C4E9EF558DAEA9 /* Pods-Personal-DiaryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-DiaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personal-Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Personal-Diary";
+			};
+			name = Debug;
+		};
+		6A498D582929367500E6588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA43FDA83C0EA21B415E289 /* Pods-Personal-DiaryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-DiaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personal-Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Personal-Diary";
+			};
+			name = Release;
+		};
+		6A498D5A2929367500E6588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4E4E1EFD21ACE08B1FDD3E /* Pods-Personal-Diary-Personal-DiaryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-DiaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Personal-Diary";
+			};
+			name = Debug;
+		};
+		6A498D5B2929367500E6588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585A0D4EC8DBE3F186FC442A /* Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-DiaryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Personal-Diary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A498D242929367200E6588A /* Build configuration list for PBXProject "Personal-Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A498D512929367500E6588A /* Debug */,
+				6A498D522929367500E6588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A498D532929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A498D542929367500E6588A /* Debug */,
+				6A498D552929367500E6588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A498D562929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-DiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A498D572929367500E6588A /* Debug */,
+				6A498D582929367500E6588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A498D592929367500E6588A /* Build configuration list for PBXNativeTarget "Personal-DiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A498D5A2929367500E6588A /* Debug */,
+				6A498D5B2929367500E6588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A498D212929367200E6588A /* Project object */;
+}
