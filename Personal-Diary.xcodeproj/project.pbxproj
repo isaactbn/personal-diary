@@ -9,15 +9,49 @@
 /* Begin PBXBuildFile section */
 		065C4E5DF3BF700FCD4CDEC0 /* Pods_Personal_DiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9087D7781CFBF7D8CCB2AFF9 /* Pods_Personal_DiaryTests.framework */; };
 		5A90C6145BB49C6EBE8BD90E /* Pods_Personal_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E667CE8C32010DEA7666C2 /* Pods_Personal_Diary.framework */; };
+		6A354A4B292947AF00E64B44 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A4A292947AE00E64B44 /* LoginRouter.swift */; };
+		6A354A4D2929487600E64B44 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A4C2929487600E64B44 /* LoginEntity.swift */; };
+		6A354A4F292948E800E64B44 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A4E292948E800E64B44 /* LoginPresenter.swift */; };
+		6A354A5129294A0600E64B44 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A5029294A0600E64B44 /* LoginInteractor.swift */; };
+		6A354A58292954D300E64B44 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A56292954D300E64B44 /* LoginVC.swift */; };
+		6A354A59292954D300E64B44 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A354A57292954D300E64B44 /* LoginVC.xib */; };
+		6A354A5B292954DC00E64B44 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A5A292954DC00E64B44 /* LoginView.swift */; };
+		6A354A5F2929553F00E64B44 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A5E2929553F00E64B44 /* BaseVC.swift */; };
+		6A354A612929554800E64B44 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A354A602929554800E64B44 /* BaseView.swift */; };
 		6A498D2D2929367200E6588A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D2C2929367200E6588A /* AppDelegate.swift */; };
 		6A498D2F2929367200E6588A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D2E2929367200E6588A /* SceneDelegate.swift */; };
-		6A498D312929367200E6588A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D302929367200E6588A /* ViewController.swift */; };
-		6A498D342929367200E6588A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D322929367200E6588A /* Main.storyboard */; };
 		6A498D362929367500E6588A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D352929367500E6588A /* Assets.xcassets */; };
 		6A498D392929367500E6588A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A498D372929367500E6588A /* LaunchScreen.storyboard */; };
 		6A498D442929367500E6588A /* Personal_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D432929367500E6588A /* Personal_DiaryTests.swift */; };
 		6A498D4E2929367500E6588A /* Personal_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D4D2929367500E6588A /* Personal_DiaryUITests.swift */; };
 		6A498D502929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A498D4F2929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift */; };
+		6AAA84A42929FF8E001E8974 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84A32929FF8E001E8974 /* CALayer+Extension.swift */; };
+		6AAA84A62929FFD0001E8974 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84A52929FFD0001E8974 /* UIColor+Extension.swift */; };
+		6AAA84A9292A001B001E8974 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84A8292A001B001E8974 /* GradientLayer.swift */; };
+		6AAA84AB292A0036001E8974 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84AA292A0036001E8974 /* GradientHelper.swift */; };
+		6AAA84AD292A00EF001E8974 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84AC292A00EF001E8974 /* String+Extension.swift */; };
+		6AAA84AF292A0152001E8974 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84AE292A0152001E8974 /* Date+Extension.swift */; };
+		6AAA84B1292A03E8001E8974 /* CAValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84B0292A03E8001E8974 /* CAValidation.swift */; };
+		6AAA84B3292A07CE001E8974 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84B2292A07CE001E8974 /* Encodable+Extension.swift */; };
+		6AAA84B6292A08C1001E8974 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84B5292A08C1001E8974 /* Request.swift */; };
+		6AAA84B8292A097E001E8974 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84B7292A097E001E8974 /* APIEnvironment.swift */; };
+		6AAA84BA292A09C6001E8974 /* APISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84B9292A09C6001E8974 /* APISetup.swift */; };
+		6AAA84BC292A09EE001E8974 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84BB292A09EE001E8974 /* HttpMethod.swift */; };
+		6AAA84BE292A0A2D001E8974 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84BD292A0A2D001E8974 /* Reachability.swift */; };
+		6AAA84C0292A0A91001E8974 /* BaseEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84BF292A0A91001E8974 /* BaseEnvironment.swift */; };
+		6AAA84C2292A0B1E001E8974 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84C1292A0B1E001E8974 /* LoginAPI.swift */; };
+		6AAA84C4292A0BDD001E8974 /* ResponseWithMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84C3292A0BDD001E8974 /* ResponseWithMetaData.swift */; };
+		6AAA84C6292A23B3001E8974 /* CAPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84C5292A23B3001E8974 /* CAPreference.swift */; };
+		6AAA84C8292A645C001E8974 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84C7292A645C001E8974 /* UIView+Extension.swift */; };
+		6AAA84CA292A64A1001E8974 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84C9292A64A1001E8974 /* UIViewController+Extension.swift */; };
+		6AAA84D2292A67C8001E8974 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84D1292A67C7001E8974 /* RegisterRouter.swift */; };
+		6AAA84D4292A6843001E8974 /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84D3292A6843001E8974 /* RegisterEntity.swift */; };
+		6AAA84D6292A689D001E8974 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84D5292A689D001E8974 /* RegisterPresenter.swift */; };
+		6AAA84D8292A6915001E8974 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84D7292A6915001E8974 /* RegisterInteractor.swift */; };
+		6AAA84DA292A6998001E8974 /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84D9292A6998001E8974 /* RegisterAPI.swift */; };
+		6AAA84DD292A6CF8001E8974 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84DB292A6CF7001E8974 /* RegisterVC.swift */; };
+		6AAA84DE292A6CF8001E8974 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AAA84DC292A6CF7001E8974 /* RegisterVC.xib */; };
+		6AAA84E0292A70E9001E8974 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA84DF292A70E9001E8974 /* RegisterView.swift */; };
 		6B6F0BA1B4124231B977439B /* Pods_Personal_Diary_Personal_DiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D83959D16E7A3DD69C0C04 /* Pods_Personal_Diary_Personal_DiaryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +77,18 @@
 		51D83959D16E7A3DD69C0C04 /* Pods_Personal_Diary_Personal_DiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Diary_Personal_DiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585A0D4EC8DBE3F186FC442A /* Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-Personal-Diary-Personal-DiaryUITests/Pods-Personal-Diary-Personal-DiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5960E5E0147B77A80A8F149E /* Pods-Personal-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Personal-Diary/Pods-Personal-Diary.debug.xcconfig"; sourceTree = "<group>"; };
-		6A498D292929367200E6588A /* Personal-Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal-Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A354A4A292947AE00E64B44 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		6A354A4C2929487600E64B44 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		6A354A4E292948E800E64B44 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		6A354A5029294A0600E64B44 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		6A354A56292954D300E64B44 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6A354A57292954D300E64B44 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		6A354A5A292954DC00E64B44 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6A354A5E2929553F00E64B44 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		6A354A602929554800E64B44 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6A498D292929367200E6588A /* Personal Diary by Cakk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Diary by Cakk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A498D2C2929367200E6588A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A498D2E2929367200E6588A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A498D302929367200E6588A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A498D332929367200E6588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A498D352929367500E6588A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A498D382929367500E6588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A498D3A2929367500E6588A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +97,33 @@
 		6A498D492929367500E6588A /* Personal-DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Personal-DiaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A498D4D2929367500E6588A /* Personal_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_DiaryUITests.swift; sourceTree = "<group>"; };
 		6A498D4F2929367500E6588A /* Personal_DiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_DiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AAA84A32929FF8E001E8974 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84A52929FFD0001E8974 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84A8292A001B001E8974 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		6AAA84AA292A0036001E8974 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
+		6AAA84AC292A00EF001E8974 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84AE292A0152001E8974 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84B0292A03E8001E8974 /* CAValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAValidation.swift; sourceTree = "<group>"; };
+		6AAA84B2292A07CE001E8974 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84B5292A08C1001E8974 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6AAA84B7292A097E001E8974 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		6AAA84B9292A09C6001E8974 /* APISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISetup.swift; sourceTree = "<group>"; };
+		6AAA84BB292A09EE001E8974 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		6AAA84BD292A0A2D001E8974 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6AAA84BF292A0A91001E8974 /* BaseEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEnvironment.swift; sourceTree = "<group>"; };
+		6AAA84C1292A0B1E001E8974 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		6AAA84C3292A0BDD001E8974 /* ResponseWithMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWithMetaData.swift; sourceTree = "<group>"; };
+		6AAA84C5292A23B3001E8974 /* CAPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPreference.swift; sourceTree = "<group>"; };
+		6AAA84C7292A645C001E8974 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84C9292A64A1001E8974 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		6AAA84D1292A67C7001E8974 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		6AAA84D3292A6843001E8974 /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
+		6AAA84D5292A689D001E8974 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		6AAA84D7292A6915001E8974 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		6AAA84D9292A6998001E8974 /* RegisterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
+		6AAA84DB292A6CF7001E8974 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		6AAA84DC292A6CF7001E8974 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		6AAA84DF292A70E9001E8974 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		8FD0B7BE54C4E9EF558DAEA9 /* Pods-Personal-DiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal-DiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal-DiaryTests/Pods-Personal-DiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9087D7781CFBF7D8CCB2AFF9 /* Pods_Personal_DiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_DiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E667CE8C32010DEA7666C2 /* Pods_Personal_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +159,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A354A42292946EE00E64B44 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84CB292A6748001E8974 /* Register Module */,
+				6A354A432929471300E64B44 /* Login Module */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		6A354A432929471300E64B44 /* Login Module */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A482929478700E64B44 /* View */,
+				6A354A472929474A00E64B44 /* Interactor */,
+				6A354A462929474400E64B44 /* Presenter */,
+				6A354A452929473500E64B44 /* Entity */,
+				6A354A442929472D00E64B44 /* Router */,
+			);
+			path = "Login Module";
+			sourceTree = "<group>";
+		};
+		6A354A442929472D00E64B44 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A4A292947AE00E64B44 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6A354A452929473500E64B44 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A4C2929487600E64B44 /* LoginEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6A354A462929474400E64B44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A4E292948E800E64B44 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6A354A472929474A00E64B44 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A5029294A0600E64B44 /* LoginInteractor.swift */,
+				6AAA84C1292A0B1E001E8974 /* LoginAPI.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6A354A482929478700E64B44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A56292954D300E64B44 /* LoginVC.swift */,
+				6A354A57292954D300E64B44 /* LoginVC.xib */,
+				6A354A5A292954DC00E64B44 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A354A5C2929551F00E64B44 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84B4292A083C001E8974 /* Network */,
+				6AAA84A7292A0006001E8974 /* View */,
+				6AAA84A12929FF6C001E8974 /* Helper */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		6A354A5D2929552B00E64B44 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A354A5E2929553F00E64B44 /* BaseVC.swift */,
+				6A354A602929554800E64B44 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		6A498D202929367200E6588A = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +257,7 @@
 		6A498D2A2929367200E6588A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A498D292929367200E6588A /* Personal-Diary.app */,
+				6A498D292929367200E6588A /* Personal Diary by Cakk.app */,
 				6A498D3F2929367500E6588A /* Personal-DiaryTests.xctest */,
 				6A498D492929367500E6588A /* Personal-DiaryUITests.xctest */,
 			);
@@ -116,10 +267,10 @@
 		6A498D2B2929367200E6588A /* Personal-Diary */ = {
 			isa = PBXGroup;
 			children = (
+				6A354A5C2929551F00E64B44 /* Component */,
+				6A354A42292946EE00E64B44 /* Module */,
 				6A498D2C2929367200E6588A /* AppDelegate.swift */,
 				6A498D2E2929367200E6588A /* SceneDelegate.swift */,
-				6A498D302929367200E6588A /* ViewController.swift */,
-				6A498D322929367200E6588A /* Main.storyboard */,
 				6A498D352929367500E6588A /* Assets.xcassets */,
 				6A498D372929367500E6588A /* LaunchScreen.storyboard */,
 				6A498D3A2929367500E6588A /* Info.plist */,
@@ -144,6 +295,109 @@
 			path = "Personal-DiaryUITests";
 			sourceTree = "<group>";
 		};
+		6AAA84A12929FF6C001E8974 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84A22929FF7B001E8974 /* Extension */,
+				6A354A5D2929552B00E64B44 /* Base */,
+				6AAA84B0292A03E8001E8974 /* CAValidation.swift */,
+				6AAA84C5292A23B3001E8974 /* CAPreference.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6AAA84A22929FF7B001E8974 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84A32929FF8E001E8974 /* CALayer+Extension.swift */,
+				6AAA84A52929FFD0001E8974 /* UIColor+Extension.swift */,
+				6AAA84AC292A00EF001E8974 /* String+Extension.swift */,
+				6AAA84AE292A0152001E8974 /* Date+Extension.swift */,
+				6AAA84B2292A07CE001E8974 /* Encodable+Extension.swift */,
+				6AAA84C7292A645C001E8974 /* UIView+Extension.swift */,
+				6AAA84C9292A64A1001E8974 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6AAA84A7292A0006001E8974 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84A8292A001B001E8974 /* GradientLayer.swift */,
+				6AAA84AA292A0036001E8974 /* GradientHelper.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AAA84B4292A083C001E8974 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84B5292A08C1001E8974 /* Request.swift */,
+				6AAA84B7292A097E001E8974 /* APIEnvironment.swift */,
+				6AAA84B9292A09C6001E8974 /* APISetup.swift */,
+				6AAA84BB292A09EE001E8974 /* HttpMethod.swift */,
+				6AAA84BD292A0A2D001E8974 /* Reachability.swift */,
+				6AAA84BF292A0A91001E8974 /* BaseEnvironment.swift */,
+				6AAA84C3292A0BDD001E8974 /* ResponseWithMetaData.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6AAA84CB292A6748001E8974 /* Register Module */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84D0292A67AE001E8974 /* View */,
+				6AAA84CF292A67A4001E8974 /* Interactor */,
+				6AAA84CE292A679D001E8974 /* Presenter */,
+				6AAA84CD292A6795001E8974 /* Entity */,
+				6AAA84CC292A678F001E8974 /* Router */,
+			);
+			path = "Register Module";
+			sourceTree = "<group>";
+		};
+		6AAA84CC292A678F001E8974 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84D1292A67C7001E8974 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6AAA84CD292A6795001E8974 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84D3292A6843001E8974 /* RegisterEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6AAA84CE292A679D001E8974 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84D5292A689D001E8974 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6AAA84CF292A67A4001E8974 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84D7292A6915001E8974 /* RegisterInteractor.swift */,
+				6AAA84D9292A6998001E8974 /* RegisterAPI.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6AAA84D0292A67AE001E8974 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA84DB292A6CF7001E8974 /* RegisterVC.swift */,
+				6AAA84DC292A6CF7001E8974 /* RegisterVC.xib */,
+				6AAA84DF292A70E9001E8974 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7EB528EA94B243565D4714D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +408,6 @@
 				8FD0B7BE54C4E9EF558DAEA9 /* Pods-Personal-DiaryTests.debug.xcconfig */,
 				9DA43FDA83C0EA21B415E289 /* Pods-Personal-DiaryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,7 +440,7 @@
 			);
 			name = "Personal-Diary";
 			productName = "Personal-Diary";
-			productReference = 6A498D292929367200E6588A /* Personal-Diary.app */;
+			productReference = 6A498D292929367200E6588A /* Personal Diary by Cakk.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6A498D3E2929367500E6588A /* Personal-DiaryTests */ = {
@@ -278,8 +531,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A498D392929367500E6588A /* LaunchScreen.storyboard in Resources */,
+				6AAA84DE292A6CF8001E8974 /* RegisterVC.xib in Resources */,
 				6A498D362929367500E6588A /* Assets.xcassets in Resources */,
-				6A498D342929367200E6588A /* Main.storyboard in Resources */,
+				6A354A59292954D300E64B44 /* LoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +661,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A498D312929367200E6588A /* ViewController.swift in Sources */,
+				6A354A4F292948E800E64B44 /* LoginPresenter.swift in Sources */,
+				6AAA84AB292A0036001E8974 /* GradientHelper.swift in Sources */,
+				6A354A4D2929487600E64B44 /* LoginEntity.swift in Sources */,
+				6AAA84B1292A03E8001E8974 /* CAValidation.swift in Sources */,
+				6AAA84DD292A6CF8001E8974 /* RegisterVC.swift in Sources */,
+				6AAA84CA292A64A1001E8974 /* UIViewController+Extension.swift in Sources */,
+				6AAA84BC292A09EE001E8974 /* HttpMethod.swift in Sources */,
+				6A354A58292954D300E64B44 /* LoginVC.swift in Sources */,
+				6AAA84B3292A07CE001E8974 /* Encodable+Extension.swift in Sources */,
+				6AAA84E0292A70E9001E8974 /* RegisterView.swift in Sources */,
+				6AAA84A62929FFD0001E8974 /* UIColor+Extension.swift in Sources */,
+				6AAA84AF292A0152001E8974 /* Date+Extension.swift in Sources */,
+				6A354A5B292954DC00E64B44 /* LoginView.swift in Sources */,
+				6AAA84D4292A6843001E8974 /* RegisterEntity.swift in Sources */,
+				6AAA84D2292A67C8001E8974 /* RegisterRouter.swift in Sources */,
+				6A354A5129294A0600E64B44 /* LoginInteractor.swift in Sources */,
 				6A498D2D2929367200E6588A /* AppDelegate.swift in Sources */,
+				6AAA84D6292A689D001E8974 /* RegisterPresenter.swift in Sources */,
+				6AAA84A9292A001B001E8974 /* GradientLayer.swift in Sources */,
+				6AAA84C4292A0BDD001E8974 /* ResponseWithMetaData.swift in Sources */,
+				6AAA84B6292A08C1001E8974 /* Request.swift in Sources */,
+				6A354A4B292947AF00E64B44 /* LoginRouter.swift in Sources */,
+				6AAA84BE292A0A2D001E8974 /* Reachability.swift in Sources */,
+				6AAA84C0292A0A91001E8974 /* BaseEnvironment.swift in Sources */,
+				6AAA84C2292A0B1E001E8974 /* LoginAPI.swift in Sources */,
+				6AAA84BA292A09C6001E8974 /* APISetup.swift in Sources */,
 				6A498D2F2929367200E6588A /* SceneDelegate.swift in Sources */,
+				6AAA84DA292A6998001E8974 /* RegisterAPI.swift in Sources */,
+				6A354A612929554800E64B44 /* BaseView.swift in Sources */,
+				6AAA84C8292A645C001E8974 /* UIView+Extension.swift in Sources */,
+				6AAA84A42929FF8E001E8974 /* CALayer+Extension.swift in Sources */,
+				6AAA84AD292A00EF001E8974 /* String+Extension.swift in Sources */,
+				6AAA84B8292A097E001E8974 /* APIEnvironment.swift in Sources */,
+				6AAA84D8292A6915001E8974 /* RegisterInteractor.swift in Sources */,
+				6AAA84C6292A23B3001E8974 /* CAPreference.swift in Sources */,
+				6A354A5F2929553F00E64B44 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +733,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6A498D322929367200E6588A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A498D332929367200E6588A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6A498D372929367500E6588A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -591,19 +870,22 @@
 				INFOPLIST_FILE = "Personal-Diary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-Diary";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Personal Diary by Cakk";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -619,19 +901,22 @@
 				INFOPLIST_FILE = "Personal-Diary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cakk-app.Personal-Diary";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Personal Diary by Cakk";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
