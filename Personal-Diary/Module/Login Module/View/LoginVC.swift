@@ -44,7 +44,11 @@ class LoginVC: BaseVC, LoginView {
     }
     
     func onSuccessLogin(output: PostLoginOutput) {
-        showError(msg: "berhasil login")
+        onLoading()
+        let homeRouter = HomeRouters.start()
+        let vc = homeRouter.entry ?? UIViewController()
+        
+        showPopUpWithSpecificVC(msg: "Berhasil Login", vc: vc)
     }
     
     @IBAction func eyeButtonAct(_ sender: Any) {

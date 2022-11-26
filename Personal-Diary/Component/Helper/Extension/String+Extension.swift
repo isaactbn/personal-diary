@@ -8,6 +8,7 @@
 import UIKit
 
 enum DateFormat: String {
+    case ISO = "yyyy-MM-dd HH:mm:ss "
     case monthInitial = "dd MMM yyyy"
     case dateWithStripReversed = "yyyy-MM-dd"
 }

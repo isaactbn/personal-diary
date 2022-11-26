@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 protocol BaseView {
     func showError(msg: String)
-    func showRegisterSuccessPopUp(msg: String)
+    func showPopUpWithSpecificVC(msg: String, vc: UIViewController)
     func onLoading()
     func onFinishLoading()
 }

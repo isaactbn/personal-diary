@@ -52,7 +52,10 @@ class RegisterVC: BaseVC, RegisterView {
     }
     
     func onSuccessRegister(output: PostRegisterOutput) {
-        showRegisterSuccessPopUp(msg: "Berhasil Registrasi, silahkan login untuk masuk.")
+        let loginRouter = LoginRouters.start()
+        let vc = loginRouter.entry ?? UIViewController()
+        
+        showPopUpWithSpecificVC(msg: "Berhasil Registrasi, silahkan login untuk masuk.", vc: vc)
     }
     
     @IBAction func registerButtonAct(_ sender: Any) {

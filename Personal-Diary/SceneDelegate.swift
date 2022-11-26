@@ -15,8 +15,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let LoginRouter = LoginRouters.start()
-        let initialVC = LoginRouter.entry ?? UIViewController()
+        let hasLoggedIn: Bool = CAPreference.getBool(forKey: .kHasLoggedIn) ?? false
+        
+        let loginRouter = LoginRouters.start()
+        let homeRouter = HomeRouters.start()
+        var initialVC = UIViewController()
+        
+        if hasLoggedIn {
+            initialVC = homeRouter.entry ?? UIViewController()
+        } else if hasLoggedIn {
+            initialVC = loginRouter.entry ?? UIViewController()
+        }
         
         let window = UIWindow(windowScene: windowScene)
         self.window = window

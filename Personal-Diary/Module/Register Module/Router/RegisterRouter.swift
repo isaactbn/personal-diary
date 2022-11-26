@@ -27,7 +27,7 @@ class RegisterRouters: RegisterRouter {
         var presenter: RegisterPresenter = RegisterPresentation()
         var interactor: RegisterInteractor = RegisterInteractors()
         
-//        view.onLoading()
+        view.onLoading()
         view.presenter = presenter
         
         interactor.presenter = presenter

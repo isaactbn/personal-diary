@@ -10,6 +10,8 @@ import ProgressHUD
 
 class BaseVC: UIViewController {
     private let loadingView: UIView = UIView()
+//    private let loginRouter = LoginRouters.start()
+//    private let rootVC = loginRouter.entry ?? UIViewController()
     
     override func viewDidLoad() {
         navigationController?.interactivePopGestureRecognizer?.delegate = self
@@ -32,11 +34,15 @@ extension BaseVC: BaseView {
             self.present(alert, animated: true)
     }
     
-    func showRegisterSuccessPopUp(msg: String) {
+    func showPopUpWithSpecificVC(msg: String, vc: UIViewController) {
         let alert = UIAlertController(title: "", message: msg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
             alert.dismiss(animated: true, completion: nil)
-            self.backToRootVC()
+            if vc != LoginVC() {
+                self.pushVC(vc)
+            } else {
+                self.backToRootVC()
+            }
         }))
         self.present(alert, animated: true)
     }
