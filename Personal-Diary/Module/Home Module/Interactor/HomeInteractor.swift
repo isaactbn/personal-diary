@@ -24,7 +24,7 @@ class HomeInteractors: HomeInteractor {
                     var model: [GetHomeBodyFullResponse] = []
                     
                     response.data??.forEach{(data) in
-                        var data = GetHomeBodyFullResponse(id: data.id, title: data.title, content: data.content, isArchieved: data.isArchieved, createdAt: data.createdAt, updatedAt: data.updatedAt)
+                        let data = GetHomeBodyFullResponse(id: data.id, title: data.title, content: data.content, isArchieved: data.isArchieved, createdAt: data.createdAt, updatedAt: data.updatedAt)
                         model.append(data)
                     }
                     
@@ -36,7 +36,7 @@ class HomeInteractors: HomeInteractor {
                         var model: [GetHomeBodyFullResponse] = []
                         
                         response.data??.forEach{(data) in
-                            var data = GetHomeBodyFullResponse(id: data.id, title: data.title, content: data.content, isArchieved: data.isArchieved, createdAt: data.createdAt, updatedAt: data.updatedAt)
+                            let data = GetHomeBodyFullResponse(id: data.id, title: data.title, content: data.content, isArchieved: data.isArchieved, createdAt: data.createdAt, updatedAt: data.updatedAt)
                             model.append(data)
                         }
                         

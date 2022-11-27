@@ -36,6 +36,12 @@ class HomeVC: BaseVC, HomeView {
         createDiaryView.layer.applySketchShadow(color: #colorLiteral(red: 0, green: 0.21322909, blue: 0.5749545693, alpha: 1), alpha: 0.06, x: -1, y: 1, blur: 6, spread: 0)
         
         searchTF.addTarget(self, action: #selector(searchDidChanges), for: .editingChanged)
+        
+        createDiaryView.tapGesture(action: { [self] in
+            let createUpdateRouter = CreateUpdateRouters.start(isUpdate: false, title: "", content: "", id: "")
+            let vc = createUpdateRouter.entry ?? UIViewController()
+            self.pushVC(vc)
+        })
     }
     
     @objc private func searchDidChanges(){
@@ -52,7 +58,7 @@ class HomeVC: BaseVC, HomeView {
     
     override func viewWillAppear(_ animated: Bool) {
         showNavigationBar()
-        setupNavBarSquareArrow(title: "Beranda", back: backToRootVC)
+        setupNavBarSquareArrowWithLogoutBtn(title: "Beranda")
     }
     
     func onSuccessHomeData(output: GetHomeOutput) {
@@ -87,5 +93,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         cell.dateLabel.text = dataList[indexPath.row].updatedAt.formatedDate(from: .ISO, format: .monthInitial)
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailRouter = DetailRouters.start(id: dataList[indexPath.row].id)
+        let vc = detailRouter.entry ?? UIViewController()
+        self.pushVC(vc)
     }
 }

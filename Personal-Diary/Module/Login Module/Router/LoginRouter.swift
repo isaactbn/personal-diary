@@ -27,7 +27,6 @@ class LoginRouters: LoginRouter {
         var presenter: LoginPresenter = LoginPresentation()
         var interactor: LoginInteractor = LoginInteractors()
         
-        view.onLoading()
         view.presenter = presenter
         
         interactor.presenter = presenter

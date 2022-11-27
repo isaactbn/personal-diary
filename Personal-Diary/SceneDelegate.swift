@@ -17,13 +17,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let hasLoggedIn: Bool = CAPreference.getBool(forKey: .kHasLoggedIn) ?? false
         
-        let loginRouter = LoginRouters.start()
-        let homeRouter = HomeRouters.start()
         var initialVC = UIViewController()
         
         if hasLoggedIn {
+            let homeRouter = HomeRouters.start()
             initialVC = homeRouter.entry ?? UIViewController()
-        } else if hasLoggedIn {
+        } else {
+            let loginRouter = LoginRouters.start()
             initialVC = loginRouter.entry ?? UIViewController()
         }
         

@@ -80,6 +80,33 @@ extension UIViewController {
         navigationItem.leftBarButtonItem = back
     }
     
+    func setupNavBarSquareArrowWithLogoutBtn(title: String = "", color: UIColor = .white){
+        guard let nav = navigationController else {
+            return
+        }
+        
+        nav.navigationBar.tintColor = .white
+        nav.navigationBar.barTintColor = .white
+        nav.navigationBar.isTranslucent = false
+        nav.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        nav.navigationBar.shadowImage = UIImage()
+        extendedLayoutIncludesOpaqueBars = true
+        self.title = title
+        tabBarController?.tabBar.barTintColor = UIColor.brown
+        
+        //nav.navigationBar.titleTextAttributes = []
+        nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "WorkSans-Bold", size: 18)]
+        let back = navItem(icon: "back-square", color: color, onTap: logOut)
+        navigationItem.leftBarButtonItem = back
+    }
+    
+    func logOut() {
+        CAPreference.set(value: "", forKey: .USER_TOKEN)
+        CAPreference.set(value: false, forKey: .kHasLoggedIn)
+        
+        backToRootVC()
+    }
+    
     func navItem(icon: String = "", title: String = "", color: UIColor = .white, onTap: (() -> Void)?) -> UIBarButtonItem? {
         if !icon.elementsEqual("") {
             let image = UIImage(named: icon)

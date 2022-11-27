@@ -45,10 +45,11 @@ class LoginVC: BaseVC, LoginView {
     
     func onSuccessLogin(output: PostLoginOutput) {
         onLoading()
+        emailTF.text = ""
+        passwordTF.text = ""
         let homeRouter = HomeRouters.start()
         let vc = homeRouter.entry ?? UIViewController()
-        
-        showPopUpWithSpecificVC(msg: "Berhasil Login", vc: vc)
+        pushVC(vc)
     }
     
     @IBAction func eyeButtonAct(_ sender: Any) {
