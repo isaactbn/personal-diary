@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVC" customModule="Personal_Diary_by_Cakk" customModuleProvider="target">
             <connections>
+                <outlet property="archivedButtonView" destination="P0m-w6-Aop" id="Aif-Lb-naA"/>
                 <outlet property="contentLabel" destination="4YR-gf-Q4T" id="R9K-ZX-xa0"/>
                 <outlet property="dateLabel" destination="6Ww-9L-rNq" id="GSL-hT-pT8"/>
                 <outlet property="titleLabel" destination="rmX-dC-6h4" id="SgK-Qf-d21"/>
@@ -81,10 +82,10 @@
                                 <constraint firstItem="zVr-3Z-0KK" firstAttribute="top" secondItem="xgU-xC-tgV" secondAttribute="top" constant="16" id="FiZ-Cd-zQh"/>
                                 <constraint firstItem="4YR-gf-Q4T" firstAttribute="leading" secondItem="xgU-xC-tgV" secondAttribute="leading" constant="16" id="INM-V5-0Jz"/>
                                 <constraint firstItem="rmX-dC-6h4" firstAttribute="leading" secondItem="xgU-xC-tgV" secondAttribute="leading" constant="16" id="JfI-eU-cjO"/>
-                                <constraint firstAttribute="bottom" secondItem="4YR-gf-Q4T" secondAttribute="bottom" constant="24" id="Mau-F8-8vO"/>
                                 <constraint firstItem="6Ww-9L-rNq" firstAttribute="top" secondItem="rmX-dC-6h4" secondAttribute="bottom" constant="8" id="Nkj-83-WUn"/>
                                 <constraint firstItem="4YR-gf-Q4T" firstAttribute="top" secondItem="6Ww-9L-rNq" secondAttribute="bottom" constant="24" id="d2A-QB-VII"/>
                                 <constraint firstAttribute="trailing" secondItem="rmX-dC-6h4" secondAttribute="trailing" constant="16" id="hgD-l6-J2A"/>
+                                <constraint firstAttribute="bottom" secondItem="4YR-gf-Q4T" secondAttribute="bottom" constant="24" id="jg8-DG-fRm"/>
                                 <constraint firstAttribute="trailing" secondItem="6Ww-9L-rNq" secondAttribute="trailing" constant="16" id="lhL-Wm-umN"/>
                                 <constraint firstItem="6Ww-9L-rNq" firstAttribute="leading" secondItem="xgU-xC-tgV" secondAttribute="leading" constant="16" id="mLN-4Q-zbf"/>
                                 <constraint firstAttribute="width" constant="393" id="n18-1K-UO5"/>
@@ -106,14 +107,36 @@
                         <constraint firstItem="xgU-xC-tgV" firstAttribute="leading" secondItem="zwY-Dz-v60" secondAttribute="leading" id="g78-XR-LIq"/>
                     </constraints>
                 </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0m-w6-Aop" userLabel="Archive">
+                    <rect key="frame" x="32" y="750" width="329" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="iv4-Fa-3wD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Archived">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="archivedButtonAction:" destination="-1" eventType="touchUpInside" id="lOh-tG-WEu"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zwY-Dz-v60" secondAttribute="bottom" id="PH6-d2-DqZ"/>
                 <constraint firstItem="zwY-Dz-v60" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Wit-00-Qut"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P0m-w6-Aop" secondAttribute="trailing" constant="32" id="gTW-wA-5yl"/>
                 <constraint firstItem="zwY-Dz-v60" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h0q-ne-ip9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zwY-Dz-v60" secondAttribute="trailing" id="jJE-o9-8fU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P0m-w6-Aop" secondAttribute="bottom" constant="24" id="p8x-LK-fUr"/>
+                <constraint firstItem="P0m-w6-Aop" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zEv-Xh-Ugb"/>
             </constraints>
             <point key="canvasLocation" x="-45.038167938931295" y="-12.67605633802817"/>
         </view>

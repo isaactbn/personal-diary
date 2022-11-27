@@ -33,6 +33,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
+    
+    func setRootViewControllerWithAnimation() {
+        
+        UIView.transition(with: window!, duration: 0.25, options: [.transitionCrossDissolve, .allowAnimatedContent], animations: {
+            
+            let homeRouter = HomeRouters.start()
+            let vc = homeRouter.entry ?? UIViewController()
+            
+            let oldState = UIView.areAnimationsEnabled
+            UIView.setAnimationsEnabled(false)
+            let navigationController = UINavigationController(rootViewController: vc)
+            self.window?.rootViewController = navigationController
+            UIView.setAnimationsEnabled(oldState)
+            
+        }) { (finished) in
+            
+        }
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

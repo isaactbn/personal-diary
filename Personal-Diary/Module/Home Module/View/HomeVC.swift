@@ -15,11 +15,19 @@ class HomeVC: BaseVC, HomeView {
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var createDiaryView: UIView!
     
+    @IBOutlet weak var unarchivedView: UIView!
+    @IBOutlet weak var archivedView: UIView!
+    @IBOutlet weak var unarchivedLabel: UILabel!
+    @IBOutlet weak var archivedLabel: UILabel!
+    
+    
     var presenter: HomePresenter?
     var dataList: [GetHomeBodyFullResponse] = []
+    private var viewWrapper: [UIView] = []
     var currentPage: Int = 1
     var limit: Int = 0
     var totalData: Int = 0
+    private var isArchived: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +43,20 @@ class HomeVC: BaseVC, HomeView {
         createDiaryView.setupRadius(type: .custom(34))
         createDiaryView.layer.applySketchShadow(color: #colorLiteral(red: 0, green: 0.21322909, blue: 0.5749545693, alpha: 1), alpha: 0.06, x: -1, y: 1, blur: 6, spread: 0)
         
+        viewWrapper = [unarchivedView, archivedView]
+        for (_, value) in viewWrapper.enumerated() {
+            value.setupRadius(type: .custom(12.0), isMaskToBounds: true)
+            value.layer.applySketchShadow(color: #colorLiteral(red: 0, green: 0.21322909, blue: 0.5749545693, alpha: 1), alpha: 0.06, x: -1, y: 1, blur: 6, spread: 0)
+        }
+        
+        unarchivedView.tapGesture(action: {
+            self.setButtonView(isArchived: false)
+        })
+        
+        archivedView.tapGesture(action: {
+            self.setButtonView(isArchived: true)
+        })
+        
         searchTF.addTarget(self, action: #selector(searchDidChanges), for: .editingChanged)
         
         createDiaryView.tapGesture(action: { [self] in
@@ -42,6 +64,30 @@ class HomeVC: BaseVC, HomeView {
             let vc = createUpdateRouter.entry ?? UIViewController()
             self.pushVC(vc)
         })
+    }
+    
+    private func setButtonView(isArchived: Bool) {
+        if isArchived {
+            unarchivedView.backgroundColor = .white
+            unarchivedLabel.textColor = .blackBody
+            
+            archivedView.backgroundColor = .blueTitle
+            archivedLabel.textColor = .white
+            
+            self.isArchived = true
+            
+            presenter?.onGetDiaryList(search: "")
+        } else {
+            unarchivedView.backgroundColor = .blueTitle
+            unarchivedLabel.textColor = .white
+            
+            archivedView.backgroundColor = .white
+            archivedLabel.textColor = .blackBody
+            
+            self.isArchived = false
+            
+            presenter?.onGetDiaryList(search: "")
+        }
     }
     
     @objc private func searchDidChanges(){
@@ -62,7 +108,7 @@ class HomeVC: BaseVC, HomeView {
     }
     
     func onSuccessHomeData(output: GetHomeOutput) {
-        dataList = output.data
+        dataList = output.data.filter({$0.isArchieved == isArchived})
         currentPage = output.page
         limit = output.limit
         totalData = output.totalData
@@ -87,7 +133,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryListCell", for: indexPath) as? DiaryListCell else {
             return UITableViewCell()
         }
-
+        
+        cell.archivedImageView.isHidden = !dataList[indexPath.row].isArchieved
         cell.titleLabel.text = dataList[indexPath.row].title
         cell.contentTitle.text = dataList[indexPath.row].content
         cell.dateLabel.text = dataList[indexPath.row].updatedAt.formatedDate(from: .ISO, format: .monthInitial)

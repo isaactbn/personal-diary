@@ -18,3 +18,15 @@ struct GetDetailAPI: APISetup {
         self.parameters = parameters
     }
 }
+
+struct PutArchivedAPI: APISetup {
+    var method: HttpMethod = .PUT
+    
+    var path: String = "/diary"
+    
+    var parameters: [String : Any]
+    
+    init(parameters: [String:Any]) {
+        self.parameters = parameters
+    }
+}

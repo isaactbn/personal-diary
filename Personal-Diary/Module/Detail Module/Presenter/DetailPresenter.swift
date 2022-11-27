@@ -14,6 +14,8 @@ protocol DetailPresenter {
     var id: String? { get set }
     
     func onGetDiaryDetail(id: String)
+    func onPutArchiveDiary(id: String)
+    func onPutUnarchiveDiary(id: String)
 }
 
 class DetailPresentation: DetailPresenter {
@@ -33,6 +35,42 @@ class DetailPresentation: DetailPresenter {
         view?.onLoading()
         let bodyReq = GetDetailBodyRequest()
         interactor?.getDetail(id: id, body: bodyReq, onSuccess: { (result) in
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {return}
+                self.view?.onFinishLoading()
+                self.view?.onSuccessGetDetail(output: result)
+            }
+        }) { (error) in
+            DispatchQueue.main.async { [weak self] in
+                 guard let self = self else {return}
+                self.view?.onFinishLoading()
+                self.view?.showError(msg: error)
+            }
+        }
+    }
+    
+    func onPutArchiveDiary(id: String) {
+        view?.onLoading()
+        let bodyReq = GetDetailBodyRequest()
+        interactor?.putArchived(id: id, body: bodyReq, onSuccess: { (result) in
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {return}
+                self.view?.onFinishLoading()
+                self.view?.onSuccessGetDetail(output: result)
+            }
+        }) { (error) in
+            DispatchQueue.main.async { [weak self] in
+                 guard let self = self else {return}
+                self.view?.onFinishLoading()
+                self.view?.showError(msg: error)
+            }
+        }
+    }
+    
+    func onPutUnarchiveDiary(id: String) {
+        view?.onLoading()
+        let bodyReq = GetDetailBodyRequest()
+        interactor?.putUnarchived(id: id, body: bodyReq, onSuccess: { (result) in
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else {return}
                 self.view?.onFinishLoading()

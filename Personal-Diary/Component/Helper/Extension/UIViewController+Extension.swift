@@ -96,8 +96,8 @@ extension UIViewController {
         
         //nav.navigationBar.titleTextAttributes = []
         nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "WorkSans-Bold", size: 18)]
-        let back = navItem(icon: "back-square", color: color, onTap: logOut)
-        navigationItem.leftBarButtonItem = back
+        let back = navItem(icon: "ic-logout", color: color, onTap: logOut)
+        navigationItem.rightBarButtonItem = back
     }
     
     func logOut() {
@@ -105,6 +105,10 @@ extension UIViewController {
         CAPreference.set(value: false, forKey: .kHasLoggedIn)
         
         backToRootVC()
+        
+        if let sceneDelegate = UIApplication.shared.delegate as? SceneDelegate {
+            sceneDelegate.setRootViewControllerWithAnimation()
+        }
     }
     
     func navItem(icon: String = "", title: String = "", color: UIColor = .white, onTap: (() -> Void)?) -> UIBarButtonItem? {

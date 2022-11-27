@@ -14,6 +14,7 @@ class DiaryListCell: UITableViewCell {
     @IBOutlet weak var archiveImg: UIImageView!
     @IBOutlet weak var archiveLabel: UILabel!
     @IBOutlet weak var contentTitle: UILabel!
+    @IBOutlet weak var archivedImageView: UIStackView!
     @IBOutlet weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
